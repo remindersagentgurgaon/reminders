@@ -6,16 +6,9 @@
 <title>RenewalFlow — Insurance Agent</title><link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="loginScreen" class="login-screen">
-  <div class="login-card">
-    <div class="login-logo">↻</div><div class="eyebrow">RENEWAL INTELLIGENCE</div>
-    <h1>Welcome back</h1><p>Sign in to access your renewal dashboard.</p>
-    <form id="loginForm"><label>Username<input id="loginUser" autocomplete="username" required placeholder="Username"></label><label>Password<input id="loginPass" type="password" autocomplete="current-password" required placeholder="Password"></label><button class="primary full" type="submit">Sign in</button><div id="loginError" class="login-error" role="alert"></div></form>
-  </div>
-</div>
-<div id="app" class="app hidden">
-<header class="top"><div class="brand"><div class="logo">↻</div><div><b>RenewalFlow</b><small>Insurance Agent Command Center</small></div></div><div class="top-actions"><button id="bell" class="icon-btn" title="Enable browser notifications" type="button">🔔</button><button id="backup" class="secondary top-data-btn" type="button">Export</button><label class="secondary import top-data-btn">Import<input id="import" type="file" accept=".json,application/json"></label><button id="logout" class="secondary" type="button">Sign out</button></div></header>
-<section class="hero"><div><label>RENEWAL INTELLIGENCE</label><h1>Turn renewals<br>into <em>relationships.</em></h1><p>Capture only what matters, add a Google Calendar reminder and send the customer a WhatsApp follow-up.</p><div class="actions"><button class="primary" id="add" type="button">＋ Add Renewal</button></div></div><div class="visual"><div class="orb"><strong id="heroTotal">0</strong><span>ACTIVE<br>POLICIES</span></div></div></section>
+<div id="app" class="app">
+<header class="top"><div class="brand"><div class="logo">↻</div><div><b>RenewalFlow</b><small>Insurance Agent Command Center</small></div></div><div class="top-actions"><button class="secondary" id="backup">Export</button><label class="secondary import">Import<input id="import" type="file" accept=".json"></label><button id="bell" class="icon-btn" title="Enable browser notifications" aria-label="Enable browser notifications">🔔</button></div></header>
+<section class="hero"><div><label>RENEWAL INTELLIGENCE</label><h1>Turn renewals<br>into <em>relationships.</em></h1><p>Capture only what matters, add a Google Calendar reminder and send the customer a WhatsApp follow-up.</p><div class="actions"><button class="primary" id="add">＋ Add Renewal</button></div></div><div class="visual"><div class="orb"><strong id="heroTotal">0</strong><span>ACTIVE<br>POLICIES</span></div></div></section>
 <section class="stats"><article><span>OVERDUE</span><b id="overdue">0</b><small>Needs attention</small></article><article class="amber"><span>TODAY</span><b id="today">0</b><small>Follow up now</small></article><article><span>7 DAYS</span><b id="seven">0</b><small>Priority pipeline</small></article><article class="teal"><span>30 DAYS</span><b id="thirty">0</b><small>Plan ahead</small></article></section>
 <section class="morning"><i></i><div><b>☀ Morning Action Center</b><p id="morning">Your daily renewal queue will appear here.</p></div><button id="priority" class="secondary">View Priority</button></section>
 <section class="bar"><div><label>YOUR PORTFOLIO</label><h2>Renewal Pipeline</h2></div><div class="filters"><input id="search" placeholder="Search name / WhatsApp…"><select id="filter"><option value="all">All</option><option value="overdue">Overdue</option><option value="today">Today</option><option value="7">Next 7 days</option><option value="30">Next 30 days</option></select><button class="primary" id="add2">＋ Add</button></div></section>
