@@ -3,3 +3,12 @@
 /* WhatsApp icon */
 .mini.wa{padding:0;overflow:hidden;display:grid;place-items:center;background:#fff;border-color:#dce2ea}.mini.wa img{width:100%;height:100%;object-fit:cover;display:block}
 @media(max-width:600px){.top-actions .secondary,.top-actions .import{padding:9px 10px}.top-actions .icon-btn{padding:9px 11px}}
+
+/* Renewal description */
+.description{display:block;color:#52627a;font-size:11px;margin-top:5px;line-height:1.4}.description-field span{font-size:9px;letter-spacing:.3px;color:#98a2b3;font-weight:600}
+.description-field small{display:block;margin-top:4px;font-size:10px;color:#7a8698}.description-field small.over-limit{color:#b42318;font-weight:800}
+
+/* Description column */
+.description-col{min-width:0}.column-label{display:block;font-size:8px;font-weight:900;letter-spacing:1.2px;color:#98a2b3;margin-bottom:4px}.description-col .description{margin-top:0;color:#52627a}.empty-description{color:#a3adba!important}.description-field{position:relative}
+@media(max-width:850px){.card{grid-template-columns:1.35fr 1fr .8fr auto}.card .description-col{grid-column:2;grid-row:1 / span 2}.card .status{grid-column:1;grid-row:2}.card .cardactions{grid-column:4;grid-row:1 / span 2}}
+@media(max-width:600px){.card{grid-template-columns:1fr}.card .description-col,.card .status,.card .cardactions{grid-column:1;grid-row:auto}.card .description-col{padding-top:2px}.column-label{margin-bottom:3px}}
